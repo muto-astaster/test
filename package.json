@@ -1,0 +1,20 @@
+{
+  "name": " ",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/gulp styleguide"
+  },
+  "author": " ",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-sass": "^2.3.2",
+    "sc5-styleguide": "^1.0.0"
+  }
+}

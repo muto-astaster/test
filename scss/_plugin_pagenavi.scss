@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/*===============================================
+plugin_pagenavi
+=============================================== */
+
+.wp-pagenavi {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	text-decoration: none;
+	border: 1px solid #BFBFBF;
+	padding: 3px 5px;
+	margin: 2px;
+	opacity: 1;
+	border-radius: 15px;
+	width: 20px;
+	height: 20px;
+	padding: 0;
+	display: inline-block;
+	line-height: 20px;
+	text-align: center;
+}
+
+.wp-pagenavi a:hover {
+	border-color: #666;
+	color: #fff!important;
+	background-color: #666;
+}
+
+.wp-pagenavi span.current {
+	border-color: #333;
+	color: #fff;
+	background-color: #333;
+}
+
+.wp-pagenavi a.nextpostslink,
+.wp-pagenavi a.previouspostslink,
+.wp-pagenavi span.pages {
+	border: none;
+	width: auto;
+}

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/*===============================================
+print
+=============================================== */
+
+@media print {
+	body {
+		font-size: 10pt;
+		border: 0;
+	}
+	.wrapper {
+		max-width: 100%;
+		position: relative !important;
+		padding: 0;
+	}
+	.site_header,
+	.main_navigation,
+	.sidebar,
+	#goTop,
+	.site_footer {
+		display: none;
+	}
+	.content_area {
+		float: none;
+		width: 100%;
+	}
+}

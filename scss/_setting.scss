@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+/*===============================================
+setting
+=============================================== */
+
+//変数
+$mainColor: #5f1985;
+$mainColor02: #724f85;
+$mainColor03: #d68aff;
+$subColor:#E50012;
+$subColor02:#FFF000;
+//mixin
+@mixin fz($size) {
+	font-size: $size + px;
+	font-size: ($size / 10) * 1rem;
+}
+
+//extend
+%col2wrap {
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: -2%;
+}
+
+%col2 {
+	width: 48%;
+	margin-left: 2%;
+}
+
+%col3wrap {
+	display: flex;
+	flex-flow: row wrap;
+	margin-left: -3%;
+}
+
+%col3 {
+	margin-left: 3%;
+	width: 30.33%;
+}
+
+@media only screen and (max-width: 768px) {
+	%col2wrap_m {
+		display: flex;
+		flex-flow: row wrap;
+		margin-left: -2%;
+	}
+	%col2_m {
+		width: 48%;
+		margin-left: 2%;
+	}
+	%col3wrap_m {}
+	%col3_m {}
+}

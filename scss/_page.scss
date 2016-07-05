@@ -1,0 +1,271 @@
+@charset "UTF-8";
+
+/*===============================================
+page
+=============================================== */
+
+// home
+// show list
+// show details
+// performers list
+// performer details
+// event
+// login
+
+/* =home
+----------------------------------------------- */
+
+.top_bnr {
+	margin: 20px 0;
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+.aside_box {
+	margin-top: 30px;
+}
+
+.aside_news {
+	overflow: hidden;
+}
+
+.aside_shows .list_arrow a {
+	background-position: 0 1.5rem;
+}
+
+.aside_entries {
+	li {
+		position: relative;
+		margin-bottom: 15px;
+		padding-left: 35px;
+	}
+	img {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+
+/* =show list
+----------------------------------------------- */
+
+.show_list li {
+	position: relative;
+	/* line-height: 2.5; */
+	.more {
+		position: absolute;
+		right: 0;
+		bottom: 10px;
+		/* top: 0; */
+		line-height: 1.5;
+		margin: 0;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.show_list li {
+		overflow: hidden;
+		line-height: 2;
+		.more {
+			position: relative;
+		}
+	}
+}
+
+
+/* =show details
+----------------------------------------------- */
+
+.show_booking {
+	overflow: hidden;
+	margin-bottom: 1rem;
+	@media only screen and (max-width: 480px) {
+		text-align: center;
+		.more {
+			float: none;
+			display: inline-block;
+		}
+	}
+}
+
+.show_wrapper {
+	display: table;
+}
+
+.show_photo {
+	display: table-cell;
+	margin: 0 1rem 1rem 2px;
+	width: 280px;
+	img {
+		width: 250px;
+		height: auto;
+	}
+}
+
+.show_info {
+	display: table-cell;
+}
+
+@media only screen and (max-width: 480px) {
+	.show_wrapper {
+		display: block;
+	}
+	.show_photo {
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	.show_info {
+		display: block;
+	}
+}
+
+
+/* =performers list
+----------------------------------------------- */
+
+.performers {
+	@extend %col3wrap;
+	li {
+		@extend %col3;
+		margin-bottom: 10px;
+		text-align: center;
+		font-weight: bold;
+		.author_avatar {
+			width: 100%;
+		}
+		.author_avatar img {
+			width: 100%!important;
+			height: auto!important;
+		}
+		figcaption {
+			margin-top: .5rem;
+		}
+	}
+	a {
+		display: block;
+	}
+}
+
+
+/* =performer details
+----------------------------------------------- */
+
+.author_info {
+	overflow: hidden;
+	margin-bottom: 2rem;
+}
+
+.author_left {
+	float: left;
+	margin-right: -220px;
+}
+
+.author_contact {
+	margin-top: 5px;
+	a {
+		background-position: 0 50%;
+		background-repeat: no-repeat;
+		background-size: 15px 15px;
+		padding-left: 20px;
+	}
+	.author_contact_web a {
+		background-image: url(images/bg_web.png);
+	}
+	.author_contact_tw a {
+		background-image: url(images/bg_TW.png);
+	}
+	.author_contact_fb a {
+		background-image: url(images/bg_FB.png);
+	}
+}
+
+.author_description {
+	float: left;
+	margin-left: 220px;
+	margin-bottom: 1rem;
+}
+
+.author_performers {
+	clear: both;
+	border-top: 1px solid #ccc;
+	li {
+		display: table;
+		padding: 1rem 0;
+		border-bottom: 1px solid #ccc;
+	}
+	p {
+		display: table-cell;
+	}
+	figure {
+		display: table-cell;
+		padding-left: 1rem;
+	}
+	img {
+		border-radius: 75px;
+	}
+	figcaption {
+		font-weight: bold;
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.author_left {
+		float: none;
+		margin: 0 0 1rem;
+		text-align: center;
+	}
+	.author_contact {
+		display: inline-block;
+		text-align: left;
+	}
+	.author_description {
+		float: none;
+		margin-left: 0;
+	}
+	.author_performers {
+		li {
+			/* display: block; */
+		}
+		p {
+			display: table-footer-group;
+		}
+		figure {
+			display: table-header-group;
+			text-align: center;
+			padding-left: 0;
+		}
+		figcaption {
+			margin: .5rem 0;
+		}
+	}
+}
+
+
+/* =event
+----------------------------------------------- */
+
+@media only screen and (max-width: 480px) {
+	.em-booking-form-details textarea {
+		width: 50%!important;
+	}
+}
+
+
+/* =login
+----------------------------------------------- */
+
+.entry_content .login_account {
+	clear: both;
+	float: none;
+	display: inline-block;
+	margin: 0 .5em;
+	&:after {
+		border: none;
+		margin: 0;
+	}
+}

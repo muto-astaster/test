@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/*===============================================
+entry_content
+=============================================== */
+
+
+// Text elements
+
+.entry_content {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+	h1 {
+		font-size: 3.6rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h3 {
+		font-size: 2.5rem;
+		font-weight: bold;
+	}
+	h4 {
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	h5 {
+		font-size: 1.6rem;
+		font-weight: bold;
+	}
+	h6 {
+		font-size: 1.4rem;
+		font-weight: bold;
+	}
+	blockquote {
+		font-style: italic;
+		margin-left: 1rem;
+	}
+	embed,
+	iframe,
+	object {
+		max-width: 100%;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+	strong {
+		font-weight: bold;
+	}
+	em,
+	i {
+		font-style: italic;
+	}
+	sup,
+	sub {
+		font-size: 1rem;
+		height: 0;
+		line-height: 1;
+		position: relative;
+		vertical-align: baseline;
+	}
+	sup {
+		bottom: 1ex;
+	}
+	sub {
+		top: .5ex;
+	}
+	// list
+	ul {
+		list-style-type: disc;
+		margin-bottom: 1rem;
+		margin-left: 2rem;
+	}
+	ol {
+		list-style-type: decimal;
+		margin-bottom: 1rem;
+		margin-left: 2.5rem;
+	}
+	li {
+		margin-bottom: .5rem;
+	}
+	dt {
+		font-weight: bold;
+	}
+	dd {
+		margin-bottom: .5rem;
+	}
+	// entry-table
+	table {
+		border-bottom: 1px solid #ddd;
+		margin: 0 0 1.6rem;
+		width: 100%;
+	}
+	th {
+		color: #666;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+	}
+	td {
+		border-top: 1px solid #ddd;
+		padding: 6px 10px 6px 0;
+	}
+	// clear
+	.cl {
+		clear: both;
+		display: block;
+	}
+	hr.cl {
+		visibility: hidden;
+	}
+	// link
+	a {
+		border-bottom: 1px dotted;
+	}
+	a.more {
+		border-bottom: none;
+	}
+	// Alignment
+	.alignleft,
+	.alignright,
+	.aligncenter {
+		margin-bottom: 1rem;
+	}
+	.alignleft {
+		float: left;
+		margin: 0 1rem 1rem 2px;
+	}
+	.alignright {
+		float: right;
+		margin: 0 2px 1rem 1rem;
+	}
+	.aligncenter {
+		clear: both;
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.wp-caption .wp-caption-text,
+	.wp-caption .wp-caption-dd {
+		margin-bottom: 0;
+		padding: 5px 0 0 5px;
+		font-size: 0.8rem;
+	}
+}
+
+.single .entry_content img {
+	background-color: #fff;
+	max-width: 100%;
+	/* height:auto; */
+	padding: 4px;
+	/* margin:2px; */
+	-webkit-box-shadow: 0 0 2px #aaa;
+	box-shadow: 0 0 2px #aaa;
+}
